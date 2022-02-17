@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+</head>
+<body>
+	<style>
+		body {
+		  background-image: url('pbackground.jpg'); 
+		  background-repeat: no-repeat;
+		  background-attachment: fixed;
+		  background-size: 100%100%;
+	 }
+		</style>
+	 <h3 align="right"> 
+		<a href="index.html">Home</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 </h3>
+     <h3 align="center">
+		<font face="Lato" color"#017bf5" size=7>
+		<br><br> Registration form:
+		</font>
+	  </h3><br><br>
+	 <form method="GET" align="center"> <br><br><br> <br> <br><br>
+		First Name: <input type="text" name="firstname"><br> 
+		Last Name: <input type="text" name="lasttname"><br> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: <input type="email" name="email" required><br>
+		<!-- Updated min to minlength (min is used only for range inputs. Visit here for more info: https://www.w3schools.com/tags/att_input_maxlength.asp) -->
+		&nbsp;&nbsp;Password: <input type="password" name="password" minLength="5"><br>
+		Birthday: <input type="date" name="birthday">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br> 
+		Gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+		<input type="radio" name="gender" value="Male">Male &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+		<input type="radio" name="gender" value="Female">Female &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+		<input type="radio" name="gender" value="Other">Other &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+		Experience:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+		<input type="radio" name="experience" value="Beginer">Beginer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+		<input type="radio" name="experience" value="Intermadiate">Intermediate &nbsp;<br>
+		<input type="radio" name="experience" value="Advanced">Advanced &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+		Exercice type:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+		<!-- ******
+			See if you can play around with the below checkboxes and add the "value" attribute. How will this change the query string when you click "Register"?
+		***** -->
+		<input type="checkbox" name="Hiking"> Hiking&nbsp;&nbsp;&nbsp;&nbsp;<br>
+		<input type="checkbox" name="Alpinism"> Alpinism<br>
+		<input type="checkbox" name="Climbing"> Climbing<br>
+		Preferable Season: <br>
+		<select name="Preferable Season">
+			<option value="Spring" name="Spring">Spring</option>
+			<option value="Summer" name="Spring">Summer</option>
+			<option value="Autumn" name="Spring">Autumn</option>
+			<option value="Winter" name="Spring">Winter</option>
+		</select><br> <br>
+		<input type="submit" value="Register!">
+		<input type="reset">
+	 </form>   <br><br><br><br><br><br><br>
+	 <span>&#169;</span>
+</body>
+</html>
